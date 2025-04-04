@@ -21,7 +21,7 @@ In the file `Propagation_Banner/Propagation_Banner.js`, scroll to this section:
 ```js
 const pluginSettings = {
     tropo: 'no',     // Options: 'yes' or 'no'
-    es: 'yes',       // Options: 'yes' or 'no'
+    es: 'no',       // Options: 'yes' or 'no'
     meteor: 'no'     // Options: 'yes' or 'no'
 };
 ```
