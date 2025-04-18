@@ -5,7 +5,7 @@
 
     // Admin-controlled toggles (set one to 'yes')
     const pluginSettings = {
-        tropo: 'no',     // Options: 'yes' or 'no'
+        tropo: 'yes',     // Options: 'yes' or 'no'
         es: 'no',        // Options: 'yes' or 'no'
         meteor: 'no',    // Options: 'yes' or 'no'
         thunder: 'no'   // Options: 'yes' or 'no'
@@ -109,8 +109,8 @@
 
     function getLabel(type) {
         switch (type) {
-            case 'tropo': return 'Tropo Opening Occurring';
-            case 'es': return 'Sporadic Es Opening Occurring';
+            case 'tropo': return '⚠ DX ALERT: Tropo Opening Occurring ⚠';
+            case 'es': return '⚠ DX ALERT: Sporadic Es Opening Occurring ⚠';
             case 'meteor': return 'Meteor Shower Underway';
             case 'thunder': return '⚠ NOTICE: Due to thunderstorm activity in our area, the antenna for this receiver is currently disengaged. Once it is safe to reconnect, signals should return to normal levels. We apologize for any inconvenience. ⚠';
             default: return '';
