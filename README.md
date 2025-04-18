@@ -1,42 +1,41 @@
-# Propagation Banner Plugin
+# Propagation Banner Plugin (v4)
 
-A plugin for the FM-DX Webserver platform that allows admins to visually notify users of active FM propagation conditions. When a propagation event is active, a draggable banner appears on the receiver UI with styling and info relevant to the event.
+This FM-DX Webserver plugin allows admins to visually alert users to active FM propagation conditions or storm-related antenna disengagement.
 
 ## ✨ Features
 
-- Displays a clear, color-coded banner:
+- Displays a floating banner for:
   - 🟥 Sporadic Es Opening Occurring
   - 🟩 Tropo Opening Occurring
   - 🟧 Meteor Shower Underway
-- Tooltip includes:
-  - Description of the propagation type
-  - Instruction: `(Click and drag to reposition)`
-- Banner can be freely moved by the user
-- Only one event active at a time
+  - ⚠ Thunderstorm Notice
+- **Draggable UI** – click and drag the banner anywhere
+- **Close button (✕)** – allows users to dismiss the banner
+- Tooltip explains banner type and how to reposition
 
-## 🔧 Admin Configuration
+## 🛠 Configuration
 
-In the file `Propagation_Banner/Propagation_Banner.js`, scroll to this section:
+In `/plugins/Propagation_Banner/Propagation_Banner.js`, set only **one** value to `'yes'`:
 
 ```js
 const pluginSettings = {
-    tropo: 'no',     // Options: 'yes' or 'no'
-    es: 'no',       // Options: 'yes' or 'no'
-    meteor: 'no'     // Options: 'yes' or 'no'
+    tropo: 'no',
+    es: 'no',
+    meteor: 'no',
+    thunder: 'yes'
 };
 ```
 
-Set **only one** propagation type to `'yes'`. If all are `'no'`, no banner will be shown.
+If all are `'no'`, no banner will display.
 
 ## 📁 Installation
 
-1. Place `Propagation_Banner.js` into your `/plugins/` directory.
-2. Place the folder `Propagation_Banner/` (with `Propagation_Banner.js` inside) into `/plugins/`.
-3. Toggle on the plugin from the admin interface.
-4. Edit the propagation mode as needed.
-5. Refresh the receiver interface.
+1. Place `Propagation_Banner.js` in your `/plugins/` folder.
+2. Place the `Propagation_Banner` folder with its `Propagation_Banner.js` inside the same `/plugins/` directory.
+3. Enable the plugin via the admin UI.
+4. Edit the `pluginSettings` in the script as needed.
+5. Reload your FM-DX Webserver interface.
 
 ---
 
-**Created by Loyd Van Horn / DX Central**
-
+Released by **Loyd Van Horn / DX Central**
