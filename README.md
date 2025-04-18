@@ -1,4 +1,4 @@
-# Propagation Banner Plugin (v4)
+# Propagation Banner Plugin (v1.1)
 
 This FM-DX Webserver plugin allows admins to visually alert users to active FM propagation conditions or storm-related antenna disengagement.
 
