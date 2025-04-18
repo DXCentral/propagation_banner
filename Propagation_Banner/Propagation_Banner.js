@@ -111,7 +111,7 @@
         switch (type) {
             case 'tropo': return '⚠ DX ALERT: Tropo Opening Occurring ⚠';
             case 'es': return '⚠ DX ALERT: Sporadic Es Opening Occurring ⚠';
-            case 'meteor': return 'Meteor Shower Underway';
+            case 'meteor': return '⚠ DX ALERT:  Meteor Shower Underway ⚠';
             case 'thunder': return '⚠ NOTICE: Due to thunderstorm activity in our area, the antenna for this receiver is currently disengaged. Once it is safe to reconnect, signals should return to normal levels. We apologize for any inconvenience. ⚠';
             default: return '';
         }
