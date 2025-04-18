@@ -5,7 +5,7 @@
 
     // Admin-controlled toggles (set one to 'yes')
     const pluginSettings = {
-        tropo: 'yes',     // Options: 'yes' or 'no'
+        tropo: 'no',     // Options: 'yes' or 'no'
         es: 'no',        // Options: 'yes' or 'no'
         meteor: 'no',    // Options: 'yes' or 'no'
         thunder: 'no'   // Options: 'yes' or 'no'
