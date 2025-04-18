@@ -36,6 +36,10 @@ If all are `'no'`, no banner will display.
 4. Edit the `pluginSettings` in the script as needed.
 5. Reload your FM-DX Webserver interface.
 
+VERSION 1.1
+1.  Added a fourth banner that allows users to indicate when they have had to unplug their antennas due to storm activity (or is that just me?!)
+2.  By request from users, added an "X" that allows users of the webserver to close/disengage the banner so as not to overlap the UI - especially on mobile.
+
 ---
 
 Released by **Loyd Van Horn / DX Central**
